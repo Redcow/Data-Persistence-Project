@@ -1,5 +1,3 @@
-using System.Runtime.Remoting.Messaging;
-
 public class PlayerClass
 {
     public int score = 0;

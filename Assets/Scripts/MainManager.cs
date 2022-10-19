@@ -22,6 +22,10 @@ public class MainManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        if(!InstanceManager.Instance)
+        {
+            SceneManager.LoadScene("StartMenu");
+        }
         InstanceManager.Instance.GetPlayer().score = 0;
         InstanceManager.Instance.displayBestScore(BestScoreText);
         const float step = 0.6f;
