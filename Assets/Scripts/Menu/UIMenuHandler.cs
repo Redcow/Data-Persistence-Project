@@ -8,6 +8,11 @@ using UnityEditor;
 
 public class UIMenuHandler : MonoBehaviour
 {
+    public void OnNameChange(string _playerName)
+    {
+        InstanceManager.Instance.SetPlayerName(_playerName);
+    }
+    
     public void StartGame()
     {
         SceneManager.LoadScene("main");
